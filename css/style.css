@@ -1,3 +1,7 @@
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
 .row-header {
   margin: 0px;
   padding: 0px auto;
@@ -27,4 +31,8 @@
   font-size: 80%;
   margin: 0px;
   color: #0f0f0f;
+}
+
+.navbar-dark {
+  background-color: #512da8;
 }
