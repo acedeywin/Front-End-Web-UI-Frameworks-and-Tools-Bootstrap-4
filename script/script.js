@@ -1,3 +1,13 @@
 $(document).ready(function () {
-  $('[data-toggle="tooltip"]').tooltip();
+  // $('[data-toggle="tooltip"]').tooltip();
+
+  $("#mycarousel").carousel({ interval: 1000 });
+
+  $("#carousel-pause").click(function () {
+    $("#mycarousel").carousel("pause");
+  });
+
+  $("#carousel-play").click(function () {
+    $("#mycarousel").carousel("cycle");
+  });
 });

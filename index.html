@@ -285,6 +285,7 @@
       </div>
     </div>
 
+    <!-- Code for the jumbotron -->
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
@@ -321,6 +322,7 @@
       </div>
     </header>
 
+    <!-- Code for the carousel -->
     <div class="container">
       <div class="row row-content">
         <div class="col">
@@ -382,6 +384,7 @@
                 </div>
               </div>
             </div>
+            <!-- Carousel controls -->
             <ol class="carousel-indicators">
               <li
                 data-target="#mycarousel"
@@ -407,6 +410,16 @@
             >
               <span class="carousel-control-next-icon"></span>
             </a>
+
+            <!-- More of Carousel control -->
+            <div class="btn-group" id="carouselButton">
+              <button class="btn btn-danger btn-sm" id="carousel-pause">
+                <span class="fa fa-pause"></span>
+              </button>
+              <button class="btn btn-danger btn-sm" id="carousel-play">
+                <span class="fa fa-play"></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -558,5 +571,21 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="script/script.js"></script>
+
+    <!-- <script>
+      $(document).ready(function () {
+        // $('[data-toggle="tooltip"]').tooltip();
+
+        $("#mycarousel").carousel({ interval: 500 });
+
+        $("#carousel-pause").click(function () {
+          $("#mycarousel").carousel("pause");
+        });
+
+        $("#carousel-play").click(function () {
+          $("#mycarousel").carousel("cycle");
+        });
+      });
+    </script> -->
   </body>
 </html>
