@@ -1,9 +1,9 @@
-$(() => {
+$(document).ready(function () {
   // $('[data-toggle="tooltip"]').tooltip();
 
   $("#mycarousel").carousel({ interval: 1000, pause: false });
 
-  $("#carouselButton").on("click", () => {
+  $("#carouselButton").on("click", function () {
     if ($("#carouselButton").children("span").hasClass("fa-pause")) {
       $("#mycarousel").carousel("pause");
       $("#carouselButton").children("span").removeClass("fa-pause");
@@ -15,13 +15,13 @@ $(() => {
     }
   });
 
-  $(".login").on("click", () => {
+  $(".login").on("click", function () {
     $("#loginModal").modal("show");
 
     return false;
   });
 
-  $("#reserveTab").on("click", () => {
+  $("#reserveTab").on("click", function () {
     $("#reserve").modal("toggle");
 
     return false;
