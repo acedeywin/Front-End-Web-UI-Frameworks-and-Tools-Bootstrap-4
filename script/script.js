@@ -1,9 +1,9 @@
-$(document).ready(function () {
+$(() => {
   // $('[data-toggle="tooltip"]').tooltip();
 
   $("#mycarousel").carousel({ interval: 1000, pause: false });
 
-  $("#carouselButton").click(function () {
+  $("#carouselButton").on("click", () => {
     if ($("#carouselButton").children("span").hasClass("fa-pause")) {
       $("#mycarousel").carousel("pause");
       $("#carouselButton").children("span").removeClass("fa-pause");
@@ -13,5 +13,17 @@ $(document).ready(function () {
       $("#carouselButton").children("span").removeClass("fa-play");
       $("#carouselButton").children("span").addClass("fa-pause");
     }
+  });
+
+  $(".login").on("click", () => {
+    $("#loginModal").modal("show");
+
+    return false;
+  });
+
+  $("#reserveTab").on("click", () => {
+    $("#reserve").modal("toggle");
+
+    return false;
   });
 });

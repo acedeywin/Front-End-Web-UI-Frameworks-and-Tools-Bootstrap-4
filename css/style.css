@@ -53,6 +53,15 @@ body {
   bottom: 0px;
   z-index: 1; }
 
+.modal-content .modal-header {
+  background-color: #512dab;
+  color: #ffff; }
+  .modal-content .modal-header button {
+    color: #ddd; }
+
+.modal-content .modal-body {
+  background-color: #d1c4e9; }
+
 .link-unstyled,
 .link-unstyled:visited,
 .link-unstyled:hover,
